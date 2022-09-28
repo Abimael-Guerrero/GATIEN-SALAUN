@@ -15,7 +15,6 @@
   overflow: hidden;
  
   &__video {
-    border: 1px solid red;
     height: 100%;
     width: 177.77777778vh; /* 100 * 16 / 9 */
     min-width: 100%;
@@ -288,6 +287,7 @@
     &__image {
       width: 50%;
       background-image: url("../app/img/gatien-salaun-2.jpg");
+      transform: rotateY(180deg);
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -439,7 +439,7 @@
 
       &__img {
         height: 55%;
-        background-image: url("../app/img/apartment-see-sea.jpg");
+        background-image: url("../app/img/content-production.jpg");
         background-size: cover;
         background-repeat: no-repeat;
       }
@@ -499,6 +499,7 @@
     &__image {
       width: 50%;
       height: 90%;
+      transform: rotateY(180deg);
       background-image: url("../app/img/seo.jpg");
       background-size: cover;
       background-position: center center;
