@@ -19,6 +19,7 @@
     width: 177.77777778vh; /* 100 * 16 / 9 */
     min-width: 100%;
     min-height: 56.25vw; /* 100 * 9 / 16 */
+    object-fit: fill;
   }
 
   &__filter {
@@ -35,7 +36,7 @@
     width: 90%;
     
     & ul {
-      font-family: 'MontserratBold';
+      font-family: 'MontserratRegular';
       letter-spacing: 1px;
       padding-top: 25px;
       display: flex;
@@ -172,10 +173,13 @@
 .gatien-ctnr {
   padding-bottom: 100px;
   display: flex;
-  width: 62.5%;
+  width: 950px;
   margin: 0 auto;
 
   &__image {
+    background-image: url('../app/img/gatien-salaun.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
   }
 
@@ -198,7 +202,7 @@
 
     &__button {
       border: 3px solid #5E6066;
-      color: #5E6066;
+      color: white;
       width: 100%;
       text-align: center;
       font-family: 'MontserratLight';
@@ -208,7 +212,7 @@
       transition: all 0.2s ease-out;
       
       &:hover {
-        border: 3px solid $gray;
+        border: 3px solid white;
         color: white;
       }
     }
@@ -225,9 +229,12 @@
     font-size: 100px;
     text-align: center;
     padding-bottom: 50px;
+    color: $gray-2;
   }
 
   &__title {
+    width: 950px;
+    margin: 0 auto;
     font-family: 'LostaMastaThin';
     font-weight: 100;
     font-size: 95px;
@@ -237,8 +244,9 @@
   }
   
   &__image {
-    width: 60%;
+    width: 950px;
     height: 450px;
+    margin: 0 auto;
     background-image: url("../app/img/photo-elegant-house.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -249,11 +257,13 @@
   &__line {
     width: 3px;
     height: 25px;
-    background-color: $black;
-    margin: 50px auto;
+    background-color: $gray-2;
+    margin: 75px auto;
   }
 
   &__subtitle {
+    width: 950px;
+    margin: 0 auto;
     font-family: 'MontserratLight';
     font-weight: 100;
     font-size: 48px;
@@ -262,10 +272,10 @@
 
 // SECTION: Here is why
   &__ctnr-explanation {
-    width: 62.5%;
+    width: 950px;
     display: flex;
     margin: 0 auto;
-    padding: 50px 0 100px 0;
+    padding: 100px 0 100px;
     
     &__ctnr-text {
       width: 50%;
@@ -303,13 +313,13 @@
   padding: 100px 0;
   
   &__title {
+    margin: 0 250px;
     font-family: 'LostaMastaThin';
     font-weight: 100;
     line-height: 120px;
     font-size: 95px;
     text-align: left;
     position: relative;
-    margin: 0 250px;
     padding-bottom: 50px;
 
     &::after {
@@ -409,7 +419,7 @@
 
   &__explanation {
     padding-top: 50px;
-    width: 62.5%;
+    width: 950px;
     display: flex;
 
     &__text-ctnr {
@@ -441,6 +451,7 @@
         height: 55%;
         background-image: url("../app/img/content-production.jpg");
         background-size: cover;
+        background-position: center center;
         background-repeat: no-repeat;
       }
 
@@ -493,7 +504,7 @@
 
   &__explanation {
     color: white;
-    width: 62.5%;
+    width: 950px;
     display: flex;
 
     &__image {
@@ -574,7 +585,7 @@
 
   &__explanation {
     color: white;
-    width: 62.5%;
+    width: 950px;
     display: flex;
 
     &__text-ctnr {
@@ -598,9 +609,9 @@
     &__image {
       width: 50%;
       height: 90%;
-      background-image: url("../app/img/marketing.jpg");
+      background-image: url("../app/img/social-media.jpg");
       background-size: cover;
-      background-position: 25% 0%;
+      background-position: 50% 0%;
       background-repeat: no-repeat;
       align-self: center;
     }
